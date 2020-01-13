@@ -16,8 +16,7 @@ public class InvitationRouter {
 	public RouterFunction<ServerResponse> route(InvitationHandler invitationHandler) {
 
 		return RouterFunctions
-			.route(RequestPredicates.GET("/invite").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)),
-					invitationHandler::invite);
+			.route(RequestPredicates.GET("/events/invite").and(
+					RequestPredicates.accept(MediaType.APPLICATION_JSON)), invitationHandler::invite);
 	}
-
 }

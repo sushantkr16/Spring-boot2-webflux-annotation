@@ -28,4 +28,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-webflux')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
+
+	compileOnly "org.projectlombok:lombok:1.18.10"
+	testCompileOnly "org.projectlombok:lombok:1.18.10"
+	annotationProcessor "org.projectlombok:lombok:1.18.10"
+	testAnnotationProcessor "org.projectlombok:lombok:1.18.10"
 }
