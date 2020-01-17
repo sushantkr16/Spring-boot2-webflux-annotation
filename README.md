@@ -1,8 +1,8 @@
-# Spring-boot2-webflux
+# Spring-boot2-webflux-annotation
 
 Spring boot 2 with Spring WebFlux sample project
 
-1. Using functional framework
+1. Using Annotation framework
 
 Use the URL to validate :
 
