@@ -17,22 +17,15 @@ apply plugin: 'io.spring.dependency-management'
 
 
 bootJar {
-	baseName = 'Spring-boot2-webflux'
+	baseName = 'Spring-boot2-webflux-annotation'
 	version =  '0.0.1-SNAPSHOT'
 }
 
 group = 'com.sk.learn'
-//version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
-//jar.enabled = true
-//[bootJar]*.enabled = false
-
 
 repositories {
 	mavenCentral()
 }
-
-
 
 dependencies {
 	compile ('org.springframework.boot:spring-boot-starter-webflux') {
