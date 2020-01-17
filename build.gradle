@@ -15,17 +15,31 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+
+bootJar {
+	baseName = 'Spring-boot2-webflux'
+	version =  '0.0.1-SNAPSHOT'
+}
+
 group = 'com.sk.learn'
-version = '0.0.1-SNAPSHOT'
+//version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+//jar.enabled = true
+//[bootJar]*.enabled = false
+
 
 repositories {
 	mavenCentral()
 }
 
 
+
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-webflux')
+	compile ('org.springframework.boot:spring-boot-starter-webflux') {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-reactor-netty'
+	}
+	compile 'org.springframework.boot:spring-boot-starter-tomcat'
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
 

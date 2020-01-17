@@ -1,15 +1,17 @@
 package com.sk.learn;
 
-import com.sk.learn.client.web.InvitationWebClient;
+import com.sk.learn.client.InvitationWebClient;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages = "com.sk.learn")
+@Slf4j
+@SpringBootApplication
 public class SpringBoot2WebFluxApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBoot2WebFluxApplication.class, args);
 	}
+
 
 }
