@@ -12,4 +12,6 @@ Use the URL to validate :
 
 Integration with Cassandra is pending.
 
+Tags : ksushant, sushant, Resilience 4j, spring boot 2
+
 
